@@ -28,3 +28,50 @@
     }
   }
 }
+
+.project {
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #007bff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.technologie{
+  background-color: #0ba376;
+    border-radius: 3px;
+    padding: 5px 10px;
+    line-height: 1.2;
+    margin: 3px 2px;
+    width: 74px;
+    list-style: none;
+}

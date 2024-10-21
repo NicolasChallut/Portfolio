@@ -6,11 +6,18 @@ location?:string;
 id:string;
 
 constructor(
-            public title:string,
-            public imageUrl:string,
-            public description:string,
-            public createdAt:Date,
-            public snaps:number){
+    public title: string,
+    public imageUrl: string,
+    public description: string,
+    public createdDate: Date,
+    public snaps: number,
+    public localisation?: string,
+    public technologies?: string[],
+    public tools?: string[],
+    public competencies?: string[],
+    public github?: string, // Ajoute la propriété GitHub
+    public website?: string  // Ajoute la propriété Website si besoin
+  ){
     this.id= crypto.randomUUID().substring(0,8);
         }
 

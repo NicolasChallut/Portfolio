@@ -2,18 +2,34 @@
     <h2>{{ faceSnap.title | uppercase }}</h2>
     <button (click)="goBack()">BACK</button>
 
-    @if (faceSnap.location!=null){
-        <p>Localisation {{faceSnap.location}}</p>
-    }
-    @else  {
-        <p> Localisation non précisée </p>
-    }
-    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
     <p>{{ faceSnap.description }}</p>
-    <p>FaceSnap créée le {{ faceSnap.createdAt | date:' d MMMM YYYY' }}</p>
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    
+    
     
         <button (click)="onSnap()">{{snapButtonText}}</button>
         <span [ngStyle]="{color:'rgb(0,'+ faceSnap.snaps +',0)'}">🤌 {{ faceSnap.snaps }}</span>
   </div>
 
+  <div class="project face-snap-card">
+    <p><strong>Date :</strong> {{ faceSnap.createdDate | date:' d MMMM YYYY'}}</p>
+    <p><a [href]="faceSnap.website" target="_blank">{{ faceSnap.website }}</a></p>
+  <p><a [href]="faceSnap.github" target="_blank">{{ faceSnap.github }}</a></p>
+
+    <h2>Compétences acquises</h2>
+    <ul>
+      <li *ngFor="let competency of faceSnap.competencies">{{ competency }}</li>
+    </ul>
   
+    <h2>Outils utilisés</h2>
+    <ul>
+      <li *ngFor="let tool of faceSnap.tools">{{ tool }}</li>
+    </ul>
+
+    <h2>Technologie</h2>
+    <ul>
+      <li class="technologie" *ngFor="let tech of faceSnap.technologies">{{ tech }}</li>
+    </ul>
+  
+    
+  </div>
