@@ -1,7 +1,13 @@
+
+.fake-header{
+  width: 160px;
+}
+
+
 .face-snap-card {
   box-sizing: border-box;
   width: 50%;
-  margin: 20px auto;
+  margin: 20px 0 20px 0;
   padding: 10px 30px;
   box-shadow: lightgray 4px 4px 20px;
   img {
@@ -15,6 +21,10 @@
     font-size: 16px;
   }
   
+}
+
+.container{
+  display: flex;
 }
 
 .snapped {
@@ -67,7 +77,8 @@
 }
 
 .technologie{
-  background-color: #0ba376;
+  background-color: #0077B5;
+  color: white;
     border-radius: 3px;
     padding: 5px 10px;
     line-height: 1.2;
