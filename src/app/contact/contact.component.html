@@ -1,12 +1,33 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
 
+<div class="contact">
+  <div class="info-container">
+    <div class="info-block">
+      <i class="material-icons location">location_on</i>
+      <h3>Passy</h3>
+      <p>Marlioz / Haute-Savoie</p>
+    </div>
 
-<div class="contact-form-container ">
+    <div class="info-block">
+      <i class="material-icons work">home_work</i>
+      <h3>Travail</h3>
+      <p>En présentiel ou en télétravail/Hybride</p>
+    </div>
+
+    <div class="info-block">
+      <i class="material-icons check">check_circle</i>
+      <h3>Disponible</h3>
+      <p>À la recherche d'un emploi</p>
+    </div>
+  </div>
+
+  
+
+  <div class="contact-form-container">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      
       <!-- Nom -->
       <div class="form-group">
-        <i class="material-icons">search</i>
         <label for="name">Nom</label>
         <input id="name" formControlName="name" type="text" />
         <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message">
@@ -34,7 +55,21 @@
       
       <!-- Bouton Envoyer -->
       <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
-      
     </form>
   </div>
-  
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBMd6_uVLV_Kg5KnUsfCANVcwetaIwa-0&callback=initMap" async defer></script>
+<script>
+  function initMap() {
+    const location = { lat: 45.9010, lng: 6.1640 }; // Coordonnées pour Marlioz, Haute-Savoie
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: location,
+    });
+    const marker = new google.maps.Marker({
+      position: location,
+      map: map,
+    });
+  }
+</script>

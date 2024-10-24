@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { GoogleMapsModule } from '@angular/google-maps';
 
+
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -14,7 +15,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
   imports: [
     CommonModule,
     ReactiveFormsModule, 
-    GoogleMapsModule 
+    GoogleMapsModule
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']

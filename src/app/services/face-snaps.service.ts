@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { FaceSnap } from "../models/face-snaps";
 import { SnapType } from "../models/snap-type.type";
 
+
 @Injectable({
   providedIn: 'root'
 })

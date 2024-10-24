@@ -1,5 +1,12 @@
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-form-container {
     max-width: 600px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -7,11 +14,52 @@
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;
     border-radius: 4px;
- 
   }
-  i{
-    color: #e8eaed;
+
+  .check{
+    color: green;
   }
+
+  .location{
+    color:red;
+  }
+
+  .work{
+    color:#9e9e9e;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-around; /* Aligne les blocs horizontalement */
+    margin: 20px; /* Ajoute une marge autour des blocs */
+  }
+  
+  .info-block {
+    border: 1px solid #ccc; /* Bordure légère autour des blocs */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espace intérieur pour un meilleur rendu */
+    text-align: center; /* Centre le texte */
+    width: 30%; /* Largeur des blocs */
+    background-color: #f9f9f9; /* Couleur de fond légère */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet d'élévation */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition douce */
+  
+  
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+    transform: translateY(-5px); /* Légère élévation vers le haut */
+  }
+  
+  
+  h3 {
+    margin: 0; /* Enlève la marge par défaut */
+    color: #333; /* Couleur du titre */
+  }
+  
+  p {
+    color: #666; /* Couleur du texte */
+  }
+}
   
   .form-group {
     margin-bottom: 15px;
