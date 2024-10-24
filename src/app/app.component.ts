@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
 import { RouterOutlet } from '@angular/router';
-
+import { HeaderComponent } from './header/header.component'; // Suppose que ce composant est aussi standalone
+import { ContactComponent } from './contact/contact.component'; // Le composant contact standalone
 
 @Component({
   selector: 'app-root',
-  standalone: true,
+  standalone: true, // Indique que ce composant est standalone
   imports: [
-    HeaderComponent,
-    RouterOutlet
-],
+    RouterOutlet, // Importation du RouterOutlet pour la navigation
+    HeaderComponent, // Le header en standalone
+    ContactComponent // Le composant contact
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-}
+export class AppComponent { }

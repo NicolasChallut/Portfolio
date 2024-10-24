@@ -1,1 +1,40 @@
-<p>contact works!</p>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<div class="contact-form-container ">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      
+      <!-- Nom -->
+      <div class="form-group">
+        <i class="material-icons">search</i>
+        <label for="name">Nom</label>
+        <input id="name" formControlName="name" type="text" />
+        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message">
+          Le nom est obligatoire.
+        </div>
+      </div>
+      
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" />
+        <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error-message">
+          Entrez une adresse email valide.
+        </div>
+      </div>
+      
+      <!-- Message -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" formControlName="message" rows="5"></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message">
+          Le message doit comporter au moins 10 caractères.
+        </div>
+      </div>
+      
+      <!-- Bouton Envoyer -->
+      <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+      
+    </form>
+  </div>
+  

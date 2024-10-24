@@ -54,7 +54,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/linearicons/dist/icon-font.min.css"
             ],
             "scripts": []
           },

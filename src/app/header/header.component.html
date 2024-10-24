@@ -5,22 +5,17 @@
         <ul>
             <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">À propos</a></li>
             <li><a routerLink="facesnaps" routerLinkActive="active">Portfolio</a></li>
-            <li><a>Parcour</a></li>
+            <li><a routerLink="parcour" routerLinkActive="active">Parcour</a></li> <!-- Ajout du routerLink -->
             <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
-            <li><a>Extra</a></li>
+            <li><a routerLink="extra" routerLinkActive="active">Extra</a></li> <!-- Ajout du routerLink -->
         </ul>
-
-        <form class="search-bar">
-            <input type="text" placeholder="Rechercher..." />
-            <button type="submit">🔍</button>
-        </form>
-
         <div>
-            <a class="social-link" href="https://github.com/NicolasChallut" target="_blank"><img src="/images/github.png"
-                    alt="logo github"></a>
-            <a class="social-link" href="https://www.linkedin.com/in/nicolas-challut-865b22270/" target="_blank"><img
-                    src="/images/image.png" alt="logo linkedIN"></a>
+            <a class="social-link" href="https://github.com/NicolasChallut" target="_blank">
+                <img src="/images/github.png" alt="logo github">
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/nicolas-challut-865b22270/" target="_blank">
+                <img src="/images/image.png" alt="logo linkedIN">
+            </a>
         </div>
-
     </nav>
 </header>
