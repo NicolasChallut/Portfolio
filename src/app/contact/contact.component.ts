@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormControl, Validators, ReactiveFormsModule, RequiredValidator } from '@angular/forms';
 import { GoogleMapsModule } from '@angular/google-maps';
 
 
@@ -39,6 +39,7 @@ export class ContactComponent implements OnInit {
     this.contactForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
+      objet:new FormControl('',[Validators.required]),
       message: new FormControl('', [Validators.required, Validators.minLength(10)])
     });
   }

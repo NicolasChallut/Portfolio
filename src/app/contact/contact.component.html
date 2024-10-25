@@ -1,6 +1,3 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBMd6_uVLV_Kg5KnUsfCANVcwetaIwa-0"></script>
-
-<google-map [center]="center" [zoom]="zoom" style="height: 400px; width: 100%; margin-top: 20px;"></google-map>
 
 <div class="contact">
   <div class="info-container">
@@ -24,26 +21,38 @@
   </div>
 
   <div class="contact-form-container">
+    <h3>Vous souhaitez échanger? Moi aussi !
+    </h3>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <label for="name">Nom</label>
-        <input id="name" formControlName="name" type="text" />
+        <label for="name"></label>
+        <input id="name" formControlName="name" type="text" placeholder="Nom"/>
         <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message">
           Le nom est obligatoire.
         </div>
       </div>
       
       <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" formControlName="email" type="email" />
+        <label for="email"></label>
+        <input id="email" formControlName="email" type="email" placeholder="Email"/>
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error-message">
           Entrez une adresse email valide.
         </div>
       </div>
+
+      <div class="form-group">
+        <label for="email"></label>
+        <input id="email" formControlName="email" type="email" placeholder="Objet du message"/>
+        <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('objet')?.touched" class="error-message">
+          Renseignez l'objet de votre message.
+        </div>
+      </div>
+
+
       
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" formControlName="message" rows="5"></textarea>
+        <label for="message"></label>
+        <textarea id="message" formControlName="message" rows="5" placeholder="votre message"></textarea>
         <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message">
           Le message doit comporter au moins 10 caractères.
         </div>

@@ -15,8 +15,9 @@ constructor(
     public technologies?: string[],
     public tools?: string[],
     public competencies?: string[],
-    public github?: string, // Ajoute la propriété GitHub
-    public website?: string  // Ajoute la propriété Website si besoin
+    public github?: string, 
+    public website?: string,
+    public category?: string  
   ){
     this.id= crypto.randomUUID().substring(0,8);
         }
