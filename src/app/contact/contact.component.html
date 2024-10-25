@@ -1,5 +1,6 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBMd6_uVLV_Kg5KnUsfCANVcwetaIwa-0"></script>
+
+<google-map [center]="center" [zoom]="zoom" style="height: 400px; width: 100%; margin-top: 20px;"></google-map>
 
 <div class="contact">
   <div class="info-container">
@@ -22,11 +23,8 @@
     </div>
   </div>
 
-  
-
   <div class="contact-form-container">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <!-- Nom -->
       <div class="form-group">
         <label for="name">Nom</label>
         <input id="name" formControlName="name" type="text" />
@@ -35,7 +33,6 @@
         </div>
       </div>
       
-      <!-- Email -->
       <div class="form-group">
         <label for="email">Email</label>
         <input id="email" formControlName="email" type="email" />
@@ -44,7 +41,6 @@
         </div>
       </div>
       
-      <!-- Message -->
       <div class="form-group">
         <label for="message">Message</label>
         <textarea id="message" formControlName="message" rows="5"></textarea>
@@ -53,23 +49,7 @@
         </div>
       </div>
       
-      <!-- Bouton Envoyer -->
       <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
     </form>
   </div>
 </div>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBMd6_uVLV_Kg5KnUsfCANVcwetaIwa-0&callback=initMap" async defer></script>
-<script>
-  function initMap() {
-    const location = { lat: 45.9010, lng: 6.1640 }; // Coordonnées pour Marlioz, Haute-Savoie
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 15,
-      center: location,
-    });
-    const marker = new google.maps.Marker({
-      position: location,
-      map: map,
-    });
-  }
-</script>
