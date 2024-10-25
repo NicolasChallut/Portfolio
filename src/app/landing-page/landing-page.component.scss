@@ -1,6 +1,3 @@
-header{
-  height: 100%;
-}
 
 i{
   color: #a1a1a1;
@@ -37,7 +34,7 @@ i{
 .face-snap-card {
   box-sizing: border-box;
   width: 50%;
-  margin: 20px auto;
+  margin:0 0 20px 180px;
   padding: 10px 30px;
   box-shadow: lightgray 4px 4px 20px;
   overflow: hidden; /* Empêche tout débordement dans la carte */
