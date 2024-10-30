@@ -38,11 +38,13 @@ nav {
       &:hover{
         color: white;
         transition: background-color 0.3s ease, color 0.3s ease;
+        border-right: 2px solid #0099cc;
       }
 
       &.active {
         background-color: #ccc;
-        color: white;//couleur du menu actif
+        color: white;
+        border-right: 2px solid #0099cc;
       }
     }
 
@@ -53,7 +55,7 @@ nav {
         right: 0;
         height: 1px;
         background-color: #ccc;
-        top: 0; // Ajoute la ligne en haut
+        top: 0; 
       }
 
       &:last-child::after {
@@ -63,7 +65,7 @@ nav {
         right: 0;
         height: 1px;
         background-color: #ccc;
-        bottom: 0; // Ajoute la ligne en bas
+        bottom: 0; 
       }
     }
     li:hover{
