@@ -12,7 +12,7 @@ import { GoogleMapsService } from '../services/google-maps.service'; // Importez
   styleUrls: ['./contact.component.scss'],
   imports: [
     ReactiveFormsModule,
-    CommonModule,
+    CommonModule
   ]
 })
 export class ContactComponent implements OnInit, AfterViewInit {

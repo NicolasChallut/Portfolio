@@ -15,7 +15,7 @@ export class GoogleMapsService {
       }
 
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBBMd6_uVLV_Kg5KnUsfCANVcwetaIwa-0&callback=initMap`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBBMd6_uVLV_Kg5KnUsfCANVcwetaIwa-0&callback=initMap&loading=async`;
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);
