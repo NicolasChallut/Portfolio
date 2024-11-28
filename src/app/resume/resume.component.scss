@@ -1,0 +1,42 @@
+/* src/app/components/resume/resume.component.scss */
+.resume_contenent{
+    margin-left: 180px; ;
+}
+.resume-section {
+    margin-bottom: 20px;
+
+    .xp{
+      margin: 0 20px 20px 0;
+    }
+  
+    h2 {
+      color: #00aaff;
+    }
+  
+    .progress-bar {
+      width: 100%;
+      background-color: #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+  
+      .progress {
+        height: 8px;
+        background-color: #00aaff;
+      }
+    }
+  
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+  
+      span {
+        background-color: #00aaff;
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+    }
+  }
+  

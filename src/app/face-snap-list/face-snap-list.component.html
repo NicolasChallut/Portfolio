@@ -1,0 +1,9 @@
+<h2>Portfolio</h2>
+<p>mes projets réalisés</p>
+<div class="face-snap-list">
+    
+@for ( faceSnap of faceSnaps; track faceSnap.title) {
+
+    <app-face-snap [faceSnap]="faceSnap" />
+}
+</div>

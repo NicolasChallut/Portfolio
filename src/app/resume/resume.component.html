@@ -1,0 +1,53 @@
+
+<div class="resume_contenent">
+<div class="resume-section">
+    <h2 class="xp">Expériences</h2>
+    <div *ngFor="let experience of experiences">
+      <h3>{{ experience.title }} <small>{{ experience.organization }}</small></h3>
+      <p><em>{{ experience.dateRange }}</em></p>
+      <p>{{ experience.description }}</p>
+    </div>
+  </div>
+  
+  <div class="resume-section">
+    <h2>Éducation</h2>
+    <div *ngFor="let edu of education">
+      <h3>{{ edu.title }} <small>{{ edu.institution }}</small></h3>
+      <p><em>{{ edu.year }}</em></p>
+      <p>{{ edu.description }}</p>
+    </div>
+  </div>
+  
+  <div class="resume-section">
+    <h2>Compétences</h2>
+    <div *ngFor="let skill of skills">
+      <h3>{{ skill.name }}</h3>
+      <div class="progress-bar">
+        <div class="progress" [style.width.%]="skill.level"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="resume-section">
+    <h2>Technologies</h2>
+    <div class="tags">
+      <span *ngFor="let tech of technologies">{{ tech.name }}</span>
+    </div>
+  </div>
+  
+  <div class="resume-section">
+    <h2>Outils</h2>
+    <div class="tags">
+      <span *ngFor="let tool of tools">{{ tool.name }}</span>
+    </div>
+  </div>
+  
+  <div class="resume-section">
+    <h2>Plugins</h2>
+    <div class="tags">
+      <span *ngFor="let plugin of plugins">{{ plugin.name }}</span>
+    </div>
+  </div>
+
+</div>
+  
