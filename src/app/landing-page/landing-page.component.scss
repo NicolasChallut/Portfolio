@@ -1,17 +1,21 @@
-
-i{
-  color: #a1a1a1;
-}
-
   .landing-links {
     width: 100%;
     text-align: center;
   }
 
+.icon{
+  height: 24px;
+}
+
   button{
+    color: white;
+    border-radius: 4px;
     font-size: 18px;
+    background-color: #cccccc;
     &:hover {
+      background-color: #007BFF;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
       transform: translateY(-5px); /* Légère élévation vers le haut */
     }
   }

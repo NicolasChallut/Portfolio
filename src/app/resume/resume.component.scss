@@ -1,27 +1,57 @@
 /* src/app/components/resume/resume.component.scss */
 .resume_contenent{
-    margin-left: 180px; ;
+    margin-left: 180px;
+    margin-right: 10px;
 }
 .resume-section {
     margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Ligne grise */
+  
+  
+  &:last-child {
+    border-bottom: none;
+  }
 
-    .xp{
-      margin: 0 20px 20px 0;
+  .experience{
+
+    .year{
+      display: flex;
+    
+      &:last-child{
+        padding-bottom: 10px;
+      } 
     }
+    
+  }
+    
   
     h2 {
+      color: lightgray;
+      margin-top: 0;
+      padding: 10px 0;
+    }
+
+    h3 {
       color: #00aaff;
     }
   
     .progress-bar {
       width: 100%;
       background-color: #ccc;
-      border-radius: 4px;
+      border-radius: 6px;
       overflow: hidden;
+      margin-bottom: 10px;
   
       .progress {
-        height: 8px;
+        height: 14px;
         background-color: #00aaff;
+      }
+
+      .percentage {
+        position: absolute;
+        right:14px;
+        font-size: 12px;
+        font-weight: bold;
       }
     }
   
@@ -29,6 +59,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      margin-bottom: 10px;
   
       span {
         background-color: #00aaff;
@@ -36,6 +67,12 @@
         padding: 4px 8px;
         border-radius: 4px;
         font-size: 0.9em;
+
+        &:hover{
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        transform: translateY(-5px); 
+        }
       }
     }
   }

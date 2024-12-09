@@ -23,8 +23,8 @@ export class FaceSnapsService {
         'Ajouter un carrousel en boucle infini en JavaScript avec des écouteurs d’événement sur les bullets points et les flèches',
         'Mettre en place un contrôle de versionnement avec Git / GitHub'
       ],
-      'https://github.com/username/printit', // Lien GitHub du projet
-      'https://www.printit.com', // Lien vers le site web (facultatif)
+      'https://nicolaschallut.github.io/N-_8_Print-it-JS-main_13052024/', // Lien GitHub du projet
+      '', // Lien vers le site web (facultatif)
       'Intégration carrousel'
     ),
     
