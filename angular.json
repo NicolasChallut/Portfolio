@@ -30,6 +30,11 @@
     {
       "glob": "**/*",
       "input": "public"
+    },
+    {
+      "glob": "index.html",
+      "input": "src",
+      "output": "./404.html"
     }
   ],
   "styles": [
