@@ -1,9 +1,9 @@
 {
-  "routes": [
-    "/",
-    "/contact",
-    "/extra",
-    "/facesnaps",
-    "/resume"
-  ]
+  "routes": {
+    "/portfolio": {},
+    "/portfolio/contact": {},
+    "/portfolio/extra": {},
+    "/portfolio/facesnaps": {},
+    "/portfolio/resume": {}
+  }
 }
