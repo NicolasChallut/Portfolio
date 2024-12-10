@@ -16,31 +16,37 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
-          "options": {
-            "outputPath": "dist/portfolio-new",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "sass",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
-          },
+         "options": {
+  "outputPath": "dist/portfolio-new",
+  "index": "src/index.html",
+  "browser": "src/main.ts",
+  "polyfills": [
+    "zone.js"
+  ],
+  "tsConfig": "tsconfig.app.json",
+  "inlineStyleLanguage": "sass",
+  "assets": [
+    {
+      "glob": "**/*",
+      "input": "public"
+    },
+    {
+      "glob": "index.html",
+      "input": "src",
+      "output": "./404.html"
+    }
+  ],
+  "styles": [
+    "src/styles.scss"
+  ],
+  "scripts": [],
+  "server": "src/main.server.ts",
+  "prerender": true,
+  "ssr": {
+    "entry": "server.ts"
+  }
+}
+,
           "configurations": {
             "production": {
               "budgets": [
