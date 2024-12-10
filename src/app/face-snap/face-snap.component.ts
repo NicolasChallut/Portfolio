@@ -4,13 +4,12 @@ import { UpperCasePipe } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-face-snap',
-  standalone: true,
-  imports: [
-    UpperCasePipe, 
-  ],
-  templateUrl: './face-snap.component.html',
-  styleUrls: ['./face-snap.component.scss']
+    selector: 'app-face-snap',
+    imports: [
+        UpperCasePipe,
+    ],
+    templateUrl: './face-snap.component.html',
+    styleUrls: ['./face-snap.component.scss']
 })
 export class FaceSnapComponent  {
   @Input() faceSnap!:FaceSnap;

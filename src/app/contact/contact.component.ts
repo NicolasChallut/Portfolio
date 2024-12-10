@@ -6,14 +6,13 @@ import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angula
 import { GoogleMapsService } from '../services/google-maps.service'; // Importez le service
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
-  imports: [
-    ReactiveFormsModule,
-    CommonModule
-  ]
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    imports: [
+        ReactiveFormsModule,
+        CommonModule
+    ]
 })
 export class ContactComponent implements OnInit, AfterViewInit {
   contactForm!: FormGroup;

@@ -6,13 +6,12 @@ import { Experience, Education, Skill, Technology, Tool, Plugin } from '../model
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-resume',
-  standalone:true,
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss'],
-  imports:[
-    CommonModule
-  ]
+    selector: 'app-resume',
+    templateUrl: './resume.component.html',
+    styleUrls: ['./resume.component.scss'],
+    imports: [
+        CommonModule
+    ]
 })
 export class ResumeComponent implements OnInit {
   experiences: Experience[] = [];

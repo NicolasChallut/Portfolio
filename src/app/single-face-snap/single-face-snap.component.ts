@@ -6,17 +6,16 @@ import { ActivatedRoute, Router } from '@angular/router';  // Ajoutez Router ici
 
 
 @Component({
-  selector: 'app-single-face-snap',
-  standalone: true,
-  imports: [
-    NgStyle,
-    NgClass,
-    UpperCasePipe,
-    DatePipe,
-    CommonModule
-  ],
-  templateUrl: './single-face-snap.component.html',
-  styleUrls: ['./single-face-snap.component.scss']
+    selector: 'app-single-face-snap',
+    imports: [
+        NgStyle,
+        NgClass,
+        UpperCasePipe,
+        DatePipe,
+        CommonModule
+    ],
+    templateUrl: './single-face-snap.component.html',
+    styleUrls: ['./single-face-snap.component.scss']
 })
 export class SingleFaceSnapComponent implements OnInit {
   faceSnap!: FaceSnap;
