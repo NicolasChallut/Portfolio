@@ -1,6 +1,6 @@
 #Redirects from what the browser requests to what we serve
 
-/portfolioNew/contact
-/portfolioNew/resume
-/portfolioNew/facesnaps
-/portfolioNew/extra
+/contact / 301
+/resume / 301
+/facesnaps / 301
+/extra / 301
