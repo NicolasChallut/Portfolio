@@ -19,7 +19,7 @@
          "options": {
   "outputPath": "dist/portfolio-new",
   "index": "src/index.html",
-  "baseHref":"/PortfolioNew/",
+  "baseHref":"/",
   "browser": "src/main.ts",
   "polyfills": [
     "zone.js"
