@@ -137,7 +137,7 @@ export class FaceSnapsService {
         'Utilisation de bibliothèques comme jQuery et SwiperJS',
         'Dynamisation du menu avec un bouton burger pour améliorer l’expérience utilisateur'
       ],
-      'https://github.com/username/koukaki',  // Lien GitHub du projet
+      'https://nicolaschallut.github.io/koukaki_gh-pages/',  // Lien GitHub du projet
       'https://www.koukakianimation.com',  // Lien du site web
       'animation css et javascript'
     )
