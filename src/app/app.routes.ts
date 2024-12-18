@@ -12,5 +12,6 @@ export const routes: Routes = [
     {path: 'contact', component:ContactComponent},
     {path: 'extra',component:ExtraComponent},
     {path: 'resume',component:ResumeComponent},
-    {path:'', component: LandingPageComponent}
+    {path:'', component: LandingPageComponent},
+    { path: '**', redirectTo: '', pathMatch: 'full' } // Redirige les URL inconnues vers la page d'accueil
 ];
