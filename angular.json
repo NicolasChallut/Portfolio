@@ -32,6 +32,11 @@
       "input": "public"
     },
     {
+      "glob": "_redirects",
+      "input": "public",
+      "output": "/"
+    },
+    {
       "glob": "index.html",
       "input": "src",
       "output": "./404.html"
