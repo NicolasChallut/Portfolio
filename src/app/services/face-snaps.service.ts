@@ -23,8 +23,8 @@ export class FaceSnapsService {
         'Ajouter un carrousel en boucle infini en JavaScript avec des écouteurs d’événement sur les bullets points et les flèches',
         'Mettre en place un contrôle de versionnement avec Git / GitHub'
       ],
-      'https://nicolaschallut.github.io/N-_8_Print-it-JS-main_13052024/', // Lien GitHub du projet
-      '', // Lien vers le site web (facultatif)
+      'https://github.com/NicolasChallut/N-_8_Print-it-JS-main_13052024', // Lien GitHub du projet
+      'https://nicolaschallut.github.io/N-_8_Print-it-JS-main_13052024/', // Lien vers le site web (facultatif)
       'Intégration carrousel'
     ),
     
@@ -47,7 +47,7 @@ export class FaceSnapsService {
         'Mise en cache du site avec WP Super Cache'
       ],
       'https://github.com/username/chicdressing', // Lien GitHub du projet
-      undefined, // Pas de site web fourni
+      'en cour d\'hebergement', // Pas encore de site web fourni
       'optimistion avec google Lighthouse'
     ),
     
@@ -70,8 +70,8 @@ export class FaceSnapsService {
         'Application des principes de responsive design pour mobile et desktop',
         'Intégration des fonctionnalités de tri et de filtrage des photos'
       ],
-      'https://github.com/username/snapface',  // Lien GitHub du projet
-      'https://www.snapfaceapp.com',  // Lien du site web (facultatif)
+      'https://github.com/NicolasChallut/snapface',  // Lien GitHub du projet
+      'https://cerulean-medovik-771d26.netlify.app',  // Lien du site web (facultatif)
       'découverte du framework Angular'
     )
     ,
@@ -94,7 +94,7 @@ export class FaceSnapsService {
           'Expliquer le principe des tests fonctionnels et unitaires, et leur importance dans différents types de projets'
         ],
         'https://github.com/username', // Lien GitHub du projet
-        'https://www.meditsite.com', // Lien vers le site web (facultatif)
+        'en cour d\'hebergement', // Lien vers le site web (facultatif)
         'débogage'
       ),
       
@@ -117,7 +117,7 @@ export class FaceSnapsService {
         'Exporter le site (sa base de données et les archives du site) pour l’envoyer au client'
       ],
       'https://github.com/username', // Ajoute l'URL GitHub ici
-      'https://www.motaphotographer.com', // Ajoute le lien du site web ici (facultatif)
+      'en cour d\'hebergement', // Ajoute le lien du site web ici (facultatif)
       'développement web'
     ),
 

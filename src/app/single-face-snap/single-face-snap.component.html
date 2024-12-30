@@ -15,8 +15,17 @@
     
       <div class="project face-snap-card">
         <p><strong>Date :</strong> {{ faceSnap.createdDate | date:' d MMMM YYYY'}}</p>
-        <p><a [href]="faceSnap.website" target="_blank">{{ faceSnap.website }}</a></p>
-      <p><a [href]="faceSnap.github" target="_blank">{{ faceSnap.github }}</a></p>
+        <p>
+          <a [href]="faceSnap.website" target="_blank">
+            <i class="material-icons">language</i> {{ faceSnap.website }}
+          </a>
+        </p>
+        <p>
+          <a [href]="faceSnap.github" target="_blank">
+            <i class="material-icons">code</i> {{ faceSnap.github }}
+          </a>
+        </p>
+        
     
         <h2>Compétences acquises</h2>
         <ul>

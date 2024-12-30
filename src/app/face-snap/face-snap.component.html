@@ -1,16 +1,14 @@
 <div class="face-snap-container">
-    <div class="face-snap-card">
-      <div class="tableau">
-        <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
-        <div class="overlay">
-          <h2>{{ faceSnap.title | uppercase }}</h2>
-          <p>{{faceSnap.category}}</p>
-        </div>
+  <a class="face-snap-card" (click)="onViewFaceSnap()">
+    <div class="tableau">
+      <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+      <div class="overlay">
+        <h2>{{ faceSnap.title | uppercase }}</h2>
+        <p>{{ faceSnap.category }}</p>
       </div>
-      <div class="details">
-        <p>{{ faceSnap.description }}</p>
-      </div>
-      <button (click)="onViewFaceSnap()">VIEW</button>
     </div>
-  </div>
-  
+    <div class="details">
+      <p>{{ faceSnap.description }}</p>
+    </div>
+  </a>
+</div>

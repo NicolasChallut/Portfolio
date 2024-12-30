@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { GoogleMapsService } from '../services/google-maps.service'; // Importez le service
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-contact',
@@ -11,7 +12,8 @@ import { GoogleMapsService } from '../services/google-maps.service'; // Importez
     styleUrls: ['./contact.component.scss'],
     imports: [
         ReactiveFormsModule,
-        CommonModule
+        CommonModule,
+        RouterLink
     ]
 })
 export class ContactComponent implements OnInit, AfterViewInit {

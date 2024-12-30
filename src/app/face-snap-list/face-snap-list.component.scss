@@ -1,3 +1,21 @@
+@media (max-width: 768px) {
+
+    .portfolio_contenent{
+
+        margin-top: 60px;
+
+    }
+
+    h2{
+        margin-left: 15px !important;
+    }
+
+    .face-snap-list{
+         margin-left: 0px !important;
+     }
+ }
+
+
 .face-snap-list{
     display: flex;
     flex-flow: row wrap;

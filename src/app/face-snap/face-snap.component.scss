@@ -3,42 +3,39 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  max-width: 300px;
-  margin: 0 auto;
 }
 
-
-
 .face-snap-card {
-  position: relative;
-  width: calc(100% + 34px);
+  display: block; /* Nécessaire pour que <a> agisse comme un conteneur */
+  box-sizing: border-box;
+  width: 100%; /* Ou ajustez selon vos besoins */
+  max-width: 300px;
   margin: 20px auto;
-  padding: 0;
-  box-shadow: lightgray 4px 4px 20px;
-  border-radius: 10px;
-  overflow: hidden;
+  padding: 10px 30px;
+  text-decoration: none; /* Supprime les soulignements de lien */
+  color: inherit; /* Garde le style de texte */
   background: white;
-  transition: box-shadow 0.3s ease;
+  box-shadow: lightgray 4px 4px 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
 
-  &:hover {
-    box-shadow: gray 4px 4px 30px;
-  }
+.face-snap-card:hover {
+  transform: scale(1.02); /* Agrandit légèrement la carte */
 }
 
 .tableau {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .tableau img {
   width: 100%;
-  height: 200px; /* Pour uniformiser la taille des images */
-  object-fit: cover; /* Pour que l'image occupe tout l'espace sans distorsion */
-  transition: transform 0.3s ease; /* Ajout d'un effet de zoom sur survol */
+  transition: transform 0.3s ease;
 }
 
 .face-snap-card:hover .tableau img {
-  transform: scale(1.1); /* Zoom de l'image au survol */
+  transform: scale(1.1);
 }
 
 .overlay {
@@ -47,60 +44,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Couche sombre transparente */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.overlay h2 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.overlay p {
-  font-size: 14px;
-  margin-top: 5px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
 .face-snap-card:hover .overlay {
-  opacity: 1; /* L'overlay apparaît au survol */
-}
-
-.face-snap-card:hover .overlay p {
   opacity: 1;
-  transform: translateY(0); /* La catégorie apparaît avec une translation douce */
 }
 
 .details {
-  padding: 20px;
-}
-
-.details p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 0 0 10px 10px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
+  margin-top: 10px;
 }

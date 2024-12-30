@@ -58,19 +58,18 @@ header {
           align-items: center;
           width: 100%;
           height: 100%;
-          color: #333;
+          color: white;
           text-decoration: none;
 
           &:hover {
             color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
-            border-right: 2px solid #0099cc;
             transition:  transform 0.3s ease;
             transform: translateY(-5px);
           }
 
           &.active {
-            background-color: #ccc;
+            background-color: #0099cc;
             color: white;
             border-right: 2px solid #0099cc;
           }
@@ -97,7 +96,7 @@ header {
         }
 
         &:hover {
-          background-color: #ccc;
+          background-color: #0099cc;
         }
       }
     }

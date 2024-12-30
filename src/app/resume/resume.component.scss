@@ -1,4 +1,11 @@
 /* src/app/components/resume/resume.component.scss */
+@media (max-width: 768px) {
+
+  .resume_contenent{
+       margin-left: 10px !important;
+   }
+} 
+
 .resume_contenent{
     margin-left: 180px;
     margin-right: 10px;

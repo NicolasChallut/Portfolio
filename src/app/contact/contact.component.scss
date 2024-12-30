@@ -1,9 +1,16 @@
 
-/* contact.component.scss */
+@media (max-width: 768px) {
+
+  .big_container{
+       margin-left: 10px !important;
+       
+   }
+} 
+
 #map {
   width: 100%;
-  height: 500px;  /* Hauteur de la carte */
-  margin-left: 180px;
+  height: 500px;
+  margin-bottom: 15px;
 }
 
 .big_container{
@@ -11,6 +18,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 20px  20px 180px;
 }
 
 .contact{
@@ -22,7 +30,6 @@
 .contact-form-container {
     max-width: 600px;
     width: 100%;
-    margin:20px 20px  20px 180px;
     box-sizing: border-box;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;
@@ -45,8 +52,8 @@
 
   .info-container {
     display: flex;
-    justify-content: space-around; 
-    margin: 20px 20px 20px 170px; 
+    justify-content: space-around;
+    margin-bottom: 15px;
   }
   
   .info-block {
