@@ -1,39 +1,13 @@
-@media (max-width:768px) {
-
-
-  .header-computer {
-    transform: translateX(-100%);
-    transition: all 0.4s ease-in-out;
-
-    &.open {
-      transform: translateX(0);
-      transition: all 0.4s ease-in-out;
-      left: 0;
-    }
-
-    
-
-    .copyrights {
-      font-size: small !important;
-    }
-
-    .social-link {
-      img {
-        width: 18% !important;
-      }
-
-    }
-  }
-
-  .header-mobile{
-    top: 0 !important;
-    z-index: 10;
+@media (max-width:768px){
+  header{
+    left: -100%;
+    transition: transform 0.3s ease, left 0.3s ease;
   }
 }
 
 
-.header-computer {
-
+header {
+    
   position: fixed;
   text-align: center;
   background-color: #9e9e9e;
@@ -44,46 +18,44 @@
   height: 100%;
   z-index: 1000;
 
-  button {
+  button{
     box-shadow: none;
   }
 
-
-
-  h1 {
-    color: #333;
+  .header-mobile{
+    display: none;
   }
 
-  .losange_content {
+
+  h1{
+    color: #333;
+  }
+  
+  .losange_content{
     margin-top: 10px;
     display: flex;
     justify-content: center;
 
     .photoID_content {
       position: relative;
-      width: 120px;
-      /* Largeur totale de l'hexagone */
-      height: 120px;
-      /* Ajusté pour respecter les proportions */
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      /* Forme hexagonale */
-      background-color: #ccc;
-      /* Couleur de fond si besoin */
-      overflow: hidden;
-      /* Cache les parties de l'image en dehors de l'hexagone */
+      width: 120px; /* Largeur totale de l'hexagone */
+      height: 120px; /* Ajusté pour respecter les proportions */
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Forme hexagonale */
+      background-color: #ccc; /* Couleur de fond si besoin */
+      overflow: hidden; /* Cache les parties de l'image en dehors de l'hexagone */
       display: flex;
       justify-content: center;
-
-
-      .photoID {
-        position: absolute;
-        top: 5px;
-        width: 75%;
-
-      }
+    
+    
+    .photoID {
+      position: absolute;
+      top: 5px;
+      width: 75%;
+    
     }
   }
-
+  }
+  
 
   nav {
     ul {
@@ -108,7 +80,7 @@
           &:hover {
             color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
-            transition: transform 0.3s ease;
+            transition:  transform 0.3s ease;
             transform: translateY(-5px);
           }
 
@@ -144,22 +116,21 @@
         }
       }
     }
-
     .social-link {
       img {
         width: 25%;
         margin: 15px;
 
-        &:hover {
-          transition: transform 0.3s ease;
-          transform: translateY(-5px);
+        &:hover{
+          transition:transform 0.3s ease;
+      transform: translateY(-5px);
         }
       }
 
     }
   }
 
-  .copyrights {
+  .copyrights{
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -170,50 +141,8 @@
     font-size: 12px;
     text-align: center;
 
-    .icon {
+    .icon{
       height: 24px;
-    }
-  }
-
-}
-
-.header-mobile{
-  position: fixed;
-  top: -100%;
-  width: 100%;
-  height: 60px;
-  background-color: #9e9e9e;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  button{
-    box-shadow:none;
-  }
-
-  .losange_content {
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-
-    .photoID_content {
-      position: relative;
-      width: 50px;
-      height: 50px;
-      /* Forme hexagonale */
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      background-color: #ccc;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-
-
-      .photoID {
-        position: absolute;
-        top: 5px;
-        width: 75%;
-
-      }
     }
   }
   

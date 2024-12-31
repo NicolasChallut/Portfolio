@@ -1,22 +1,25 @@
 <header>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+</header>
+<div class="header-computer" [class.open]="isMenuOpen">
     <div class="losange_content">
         <div class="photoID_content">
             <img class="photoID" src="/images/photoID.png" />
         </div>
     </div>
-    
+
     <h1>Nicolas Challut</h1>
     <nav>
         <ul>
-            <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">À propos</a></li>
-            <li><a routerLink="facesnaps" routerLinkActive="active">Portfolio</a></li>
-            <li><a routerLink="resume" routerLinkActive="active">Parcour</a></li> <!-- Ajout du routerLink -->
-            <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
-            <li><a routerLink="extra" routerLinkActive="active">Extra</a></li> <!-- Ajout du routerLink -->
+            
+                <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="onNavLinkClick()">À propos</a></li>
+                <li><a routerLink="facesnaps" routerLinkActive="active" (click)="onNavLinkClick()">Portfolio</a></li>
+                <li><a routerLink="resume" routerLinkActive="active" (click)="onNavLinkClick()">Parcours</a></li>
+                <li><a routerLink="contact" routerLinkActive="active" (click)="onNavLinkClick()">Contact</a></li>
+              
+            <!-- <li><a routerLink="extra" routerLinkActive="active">Extra</a></li>  -->
         </ul>
-        <div>
+        <div class="social-logo">
             <a class="social-link" href="https://github.com/NicolasChallut" target="_blank">
                 <img src="/images/github.png" alt="logo github">
             </a>
@@ -24,10 +27,21 @@
                 <img src="/images/image.png" alt="logo linkedIN">
             </a>
         </div>
-         </nav>
-         <div class="copyrights">
-            <p>develop on <img src="/favicon.ico" class="icon">ngular</p>
-            <p>© 2024 All rights reserved. </p>
-         </div>
-         
-</header>
+    </nav>
+    <div class="copyrights">
+        <p>develop on <img src="/favicon.ico" class="icon">ngular</p>
+        <p>© 2024 All rights reserved. </p>
+    </div>
+</div>
+<div class="header-mobile">
+    <div class="losange_content">
+        <div class="photoID_content">
+            <img class="photoID" src="/images/photoID.png" />
+        </div>
+    </div>
+    
+    <button class="menu-toggle" (click)="toggleMenu()">
+        <span class="material-icons">menu</span>
+    </button>
+
+</div>

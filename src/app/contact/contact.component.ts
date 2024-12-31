@@ -13,7 +13,6 @@ import { RouterLink } from '@angular/router';
     imports: [
         ReactiveFormsModule,
         CommonModule,
-        RouterLink
     ]
 })
 export class ContactComponent implements OnInit, AfterViewInit {
