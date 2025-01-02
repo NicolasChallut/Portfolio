@@ -1,8 +1,29 @@
 @media (max-width: 768px) {
+*{
+  margin-left: 0 !important;
+}
+  .about_container{
+    margin-top: 60px;
+    
+    .face-snap-card{
+      width: 90% !important;
+      
 
-  .face-snap-card{
-       margin-left: 0px !important;
-   }
+      .about_buttons{
+        display: flex;
+        justify-content: center;
+
+      }
+    }
+
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0 !important;
+    padding: 15px;
+
+  }
 }  
   
   .landing-links {
@@ -29,7 +50,7 @@
 .about_container{
   display: flex;
   justify-content: center;
-}
+
   .about {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -54,6 +75,7 @@
   box-shadow: lightgray 4px 4px 20px;
   overflow: hidden; /* Empêche tout débordement dans la carte */
   
+}
 }
 
 .skills {

@@ -2,7 +2,12 @@
 @media (max-width: 768px) {
 
   .big_container{
-       margin-left: 10px !important;
+       margin: 10px !important;
+
+       .info-block{
+        padding: 10px;
+       }
+       
        
    }
 } 
