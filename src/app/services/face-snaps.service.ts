@@ -94,8 +94,8 @@ export class FaceSnapsService {
           'Expliquer le principe des tests fonctionnels et unitaires, et leur importance dans différents types de projets'
         ],
         'https://github.com/username', // Lien GitHub du projet
-        'en cour d\'hebergement', // Lien vers le site web (facultatif)
-        'débogage'
+        'Vidéo de démonstration https://youtu.be/65gbc2YuFps', 
+        'Debugage'
       ),
       
     new FaceSnap(
