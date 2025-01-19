@@ -15,9 +15,11 @@ constructor(
     public technologies?: string[],
     public tools?: string[],
     public competencies?: string[],
-    public github?: string, 
+    public github?: string,
+    public videoUrl?:string,
     public website?: string,
-    public category?: string  
+    public category?: string,
+    
   ){
     this.id= crypto.randomUUID().substring(0,8);
         }

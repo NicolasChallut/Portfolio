@@ -47,7 +47,8 @@ export class FaceSnapsService {
         'Mise en cache du site avec WP Super Cache'
       ],
       'https://github.com/username/chicdressing', // Lien GitHub du projet
-      'en cour d\'hebergement', // Pas encore de site web fourni
+      'lien à venir', // vidéo à venir
+      undefined,
       'optimistion avec google Lighthouse'
     ),
     
@@ -94,7 +95,8 @@ export class FaceSnapsService {
           'Expliquer le principe des tests fonctionnels et unitaires, et leur importance dans différents types de projets'
         ],
         'https://github.com/username', // Lien GitHub du projet
-        'https://youtu.be/65gbc2YuFps', 
+        'https://youtu.be/65gbc2YuFps',
+        undefined, 
         'Debugage'
       ),
       

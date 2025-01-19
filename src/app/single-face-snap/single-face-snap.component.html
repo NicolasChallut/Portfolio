@@ -15,11 +15,20 @@
     
       <div class="project face-snap-card">
         <p><strong>Date :</strong> {{ faceSnap.createdDate | date:' d MMMM YYYY'}}</p>
-        <p>
+        <p *ngIf="faceSnap.website; else videoLink">
           <a [href]="faceSnap.website" target="_blank">
-            <i class="material-icons">language</i> {{ faceSnap.website }}
+            <i class="material-icons">language</i> Lien vers le site internet
           </a>
         </p>
+        
+        <ng-template #videoLink>
+          <p *ngIf="faceSnap.videoUrl">
+            <a [href]="faceSnap.videoUrl" target="_blank">
+              <i class="material-icons">play_circle</i> Lien vers la vidéo
+            </a>
+          </p>
+        </ng-template>
+        
         <p>
           <a [href]="faceSnap.github" target="_blank">
             <i class="material-icons">code</i> {{ faceSnap.github }}
