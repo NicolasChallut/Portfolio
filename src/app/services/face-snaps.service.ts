@@ -29,28 +29,28 @@ export class FaceSnapsService {
     ),
     
 
-    new FaceSnap(
-      'Chic Dressing',
-      'images/chic-dressing.png',
-      `La cliente souhaitait optimiser les performances, l'accessibilité, le référencement SEO, et la visibilité de son site de blog et boutique de vêtements et accessoires de luxe d'occasion. Le projet incluait des améliorations sur plusieurs fronts pour garantir un site rapide, accessible, et bien référencé.`,
-      new Date('2024-03-24'),
-      120,  // Ajuste la valeur du compteur si nécessaire
-      undefined, // Remplacer par la localisation si applicable
-      ['HTML', 'CSS', 'PHP'],  // Langages utilisés
-      ['VsCode', 'Google Lighthouse', 'Feuille de calcul comparatif', 'Rapport et recommandations', 'All-in-one WP Migration', 'Bulk image resizer', 'Autoptimize', 'Flying Scripts', 'WP Super Cache', 'Yoast SEO', 'Wave Tools'], // Outils utilisés et extensions WordPress
-      [
-        'Optimisation des performances et de l\'accessibilité',
-        'Amélioration du SEO avec Yoast SEO et optimisation des mots-clés',
-        'Compression d’images et minification des scripts et styles',
-        'Rapport détaillé et recommandations pour améliorer le site',
-        'Utilisation de Google Lighthouse pour mesurer les performances',
-        'Mise en cache du site avec WP Super Cache'
-      ],
-      'https://github.com/username/chicdressing', // Lien GitHub du projet
-      'lien à venir', // vidéo à venir
-      undefined,
-      'optimistion avec google Lighthouse'
-    ),
+    // new FaceSnap(
+    //   'Chic Dressing',
+    //   'images/chic-dressing.png',
+    //   `La cliente souhaitait optimiser les performances, l'accessibilité, le référencement SEO, et la visibilité de son site de blog et boutique de vêtements et accessoires de luxe d'occasion. Le projet incluait des améliorations sur plusieurs fronts pour garantir un site rapide, accessible, et bien référencé.`,
+    //   new Date('2024-03-24'),
+    //   120,  // Ajuste la valeur du compteur si nécessaire
+    //   undefined, // Remplacer par la localisation si applicable
+    //   ['HTML', 'CSS', 'PHP'],  // Langages utilisés
+    //   ['VsCode', 'Google Lighthouse', 'Feuille de calcul comparatif', 'Rapport et recommandations', 'All-in-one WP Migration', 'Bulk image resizer', 'Autoptimize', 'Flying Scripts', 'WP Super Cache', 'Yoast SEO', 'Wave Tools'], // Outils utilisés et extensions WordPress
+    //   [
+    //     'Optimisation des performances et de l\'accessibilité',
+    //     'Amélioration du SEO avec Yoast SEO et optimisation des mots-clés',
+    //     'Compression d’images et minification des scripts et styles',
+    //     'Rapport détaillé et recommandations pour améliorer le site',
+    //     'Utilisation de Google Lighthouse pour mesurer les performances',
+    //     'Mise en cache du site avec WP Super Cache'
+    //   ],
+    //   'https://github.com/username/chicdressing', // Lien GitHub du projet
+    //   'lien à venir', // vidéo à venir
+    //   undefined,
+    //   'optimistion avec google Lighthouse'
+    // ),
     
 
     new FaceSnap(
@@ -71,8 +71,9 @@ export class FaceSnapsService {
         'Application des principes de responsive design pour mobile et desktop',
         'Intégration des fonctionnalités de tri et de filtrage des photos'
       ],
-      'https://github.com/NicolasChallut/snapface',  // Lien GitHub du projet
-      'https://cerulean-medovik-771d26.netlify.app',  // Lien du site web (facultatif)
+      'https://github.com/NicolasChallut/snapface',
+      undefined,  // Lien GitHub du projet
+      'https://angular-snap-face.netlify.app/',  // Lien du site web (facultatif)
       'découverte du framework Angular'
     )
     ,
@@ -118,8 +119,9 @@ export class FaceSnapsService {
         'Appliquer les principes de GreenIT',
         'Exporter le site (sa base de données et les archives du site) pour l’envoyer au client'
       ],
-      'https://github.com/username', // Ajoute l'URL GitHub ici
-      'en cour d\'hebergement', // Ajoute le lien du site web ici (facultatif)
+      'https://github.com/username',
+      undefined, // Ajoute l'URL GitHub ici
+      'https://galerienathaliemota.netlify.app/', // Ajoute le lien du site web ici (facultatif)
       'développement web'
     ),
 
@@ -139,7 +141,8 @@ export class FaceSnapsService {
         'Utilisation de bibliothèques comme jQuery et SwiperJS',
         'Dynamisation du menu avec un bouton burger pour améliorer l’expérience utilisateur'
       ],
-      'https://nicolaschallut.github.io/koukaki_gh-pages/',  // Lien GitHub du projet
+      'https://nicolaschallut.github.io/koukaki_gh-pages/',
+      undefined,  // Lien GitHub du projet
       'https://www.koukakianimation.com',  // Lien du site web
       'animation css et javascript'
     )
