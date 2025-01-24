@@ -24,6 +24,7 @@ export class FaceSnapsService {
         'Mettre en place un contrôle de versionnement avec Git / GitHub'
       ],
       'https://github.com/NicolasChallut/N-_8_Print-it-JS-main_13052024', // Lien GitHub du projet
+      undefined,
       'https://nicolaschallut.github.io/N-_8_Print-it-JS-main_13052024/', // Lien vers le site web (facultatif)
       'Intégration carrousel'
     ),
@@ -71,9 +72,9 @@ export class FaceSnapsService {
         'Application des principes de responsive design pour mobile et desktop',
         'Intégration des fonctionnalités de tri et de filtrage des photos'
       ],
-      'https://github.com/NicolasChallut/snapface',
-      undefined,  // Lien GitHub du projet
-      'https://angular-snap-face.netlify.app/',  // Lien du site web (facultatif)
+      'https://github.com/NicolasChallut/snapface',  // Lien GitHub du projet
+      undefined, 
+      'https://angular-snap-face.netlify.app/',  // Lien du site web 
       'découverte du framework Angular'
     )
     ,
