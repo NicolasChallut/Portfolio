@@ -6,6 +6,7 @@
 
        .info-block{
         padding: 10px;
+
        }
        
        
@@ -55,13 +56,22 @@
     color:#9e9e9e;
   }
 
+.container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .info-container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
-  }
+  
   
   .info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: 1px solid #ccc; /* Bordure légère autour des blocs */
     border-radius: 8px; /* Coins arrondis */
     padding: 20px; /* Espace intérieur pour un meilleur rendu */
@@ -87,7 +97,9 @@
     color: #666; /* Couleur du texte */
   }
 }
-  
+  }
+
+}
   .form-group {
     margin-bottom: 15px;
   }
